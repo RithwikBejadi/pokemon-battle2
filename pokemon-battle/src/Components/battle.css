@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pokemon', sans-serif;
+}
+
+.battle-container {
+    height: 100vh;
+    background-image: url(../images/image.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.battle-container h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.battle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 150px;
+    margin: 50px 0;
+    position: relative;
+}
+
+.pokemon {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border: 5px solid rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    top: 100px;
+}
+
+.pokemon img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.pokemon h2 {
+    position: absolute;
+    top: -70px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.pokemon p {
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.pokemon p:first-of-type {
+    top: -110px;
+}
+
+.pokemon p:last-of-type {
+    top: -90px;
+}
+
+.vs-text {
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin: 0 20px;
+    position: relative;
+    top: -30px;
+}
+
+.battle-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff5722, #ffc107);
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.battle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(135deg, #ffc107, #ff5722);
+}

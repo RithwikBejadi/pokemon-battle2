@@ -1,0 +1,108 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    background-image: url('../images/landing.jpg'); 
+    height: 100vh; 
+    width: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0%;
+    /* Add an overlay to make it translucent */
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    background-blend-mode: overlay; /* Blends the overlay with the background image */
+}
+
+
+.main-container h1 {
+    color: #fff;
+    font-size: 60px; /* Slightly larger for emphasis */
+    position: absolute;
+    top: 35%; /* Adjusted to create balance on the screen */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: 'Pokemon', sans-serif;
+    background: linear-gradient(135deg, rgba(255, 204, 0, 0.9), rgba(255, 87, 34, 0.9));
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0 0 15px rgba(255, 204, 0, 0.7), 0 0 30px rgba(255, 87, 34, 0.7);
+    animation: glow 3s infinite alternate;
+    text-transform: uppercase;
+    width: auto;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 15px rgba(255, 204, 0, 0.7), 0 0 30px rgba(255, 87, 34, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 30px rgba(255, 204, 0, 1), 0 0 60px rgba(255, 87, 34, 1);
+    }
+}
+
+.main-container button {
+    padding: 15px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff5722, #ff9800);
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Adds a slight border */
+    cursor: pointer;
+    border-radius: 50px;
+    position: absolute;
+    top: 55%; /* Positioned under the heading */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+}
+
+.main-container button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 250%;
+    height: 250%;
+    background: radial-gradient(white, transparent);
+    opacity: 0.7;
+    animation: twinkle 2s infinite linear;
+}
+
+.main-container button:hover {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+    /* transform: scale(1.1); */
+}
+
+.main-container button:active {
+    transform: scale(0.95);
+    background: linear-gradient(135deg, #ff5722, #ff3d00);
+}
+
+@keyframes twinkle {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translate(50%, 50%) scale(1.5);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+}

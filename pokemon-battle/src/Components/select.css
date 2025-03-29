@@ -1,0 +1,86 @@
+.select-area {
+    background-image: url(../images/select.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.select-area h1 {
+    margin: 0;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: 'Pokemon', sans-serif;
+    background: linear-gradient(135deg, rgba(214, 77, 252, 0.9), rgba(145, 193, 255, 0.8));
+    width: 60%;
+    text-align: center;
+    padding: 50px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    border: 2px solid #6a0dad;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.select-area h1:hover {
+    border-color: #ff69b4; /* Pink border on hover */
+}
+
+
+.select-area input {
+    display: block;
+    width: 40%;
+    padding: 15px;
+    margin: 20px auto;
+    font-size: 18px;
+    border: 2px solid #6a0dad;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    top: 50vh;
+}
+
+.select-area input:focus {
+    border-color: #b666d2;
+    box-shadow: 0 4px 15px rgba(182, 102, 210, 0.6);
+}
+
+
+.select-area button {
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff5722, #ffc107);
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    position: relative;
+    top: 55vh;
+
+}
+
+.select-area button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ffc107, #ff5722);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
